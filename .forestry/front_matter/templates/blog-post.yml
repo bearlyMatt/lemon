@@ -76,5 +76,3 @@ fields:
     required: false
   label: URL
   description: What you want the end of the URL to read like e.g. /my-favourite-books
-pages:
-- content/post/hello-world.md
