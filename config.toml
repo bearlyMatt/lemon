@@ -1,0 +1,106 @@
+baseURL = "http://lemons.eskibles.us/"
+languageCode = "en-gb"
+title = "Lulu's Lemons"
+theme = "cleanwhite"
+
+[outputs]
+home = ["html", "RSS", "markdown", "Algolia"]
+
+[params]
+  header_image = "img/header.webp"
+  SEOTitle = "Lulu's Lemons"
+  description = "Welcome to the wonderful world of a socially anxious introvert"
+
+  image_404 = "img/skull.svg"
+  title_404 = "It's dead! Something's gone wrong - is the server ok? https://status.eskibles.us"
+  omit_categories = "false"
+
+
+ # Sidebar settings
+  sidebar_about_description = "Musician, Teacher, Cat-Mum, Introvert"
+  #sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
+  sidebar_avatar = "img/avatar.webp"      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+ featured_tags = true 
+  featured_condition_size = 1 
+
+  friends = true
+  bookmarks = false
+  about_me = true
+
+  # Include any custom CSS and/or JS files, url or relative to /static folder
+  #custom_css = ["css/lightbox.css", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css", "css/main.css"]
+  #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]
+
+  [params.social]
+  rss            = true 
+  email          = "lulu@eskibles.us"
+  facebook      = "full profile url in facebook"
+  #googleplus    = "full profile url in googleplus"
+  #twitter       = "full profile url in twitter"
+  #linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
+  #stackoverflow  = "https://stackoverflow.com/users/yourstackoverflowid"
+  #instagram     = "full profile url in instagram"
+ # github         = "https://github.com/yourgithub"
+ # wechat         = "your wechat qr code image"
+#  medium         = "full profile url in medium"
+  pinterest     = "full profile url in pinterest"
+  #reddit        = "full profile url in reddit"
+  #gitlab        = "full profile url in gitlab"
+  #mastodon      = "full profile url in mastodon"
+  #keybase       = "full profile url in keybase"
+  #xing          = "https://www.xing.com/profile/yourxingid"
+  #git           = "full profile url for git user"
+  
+  [[params.friend_link]]
+  title = "bearlyMatt"
+  href =  "https://matthewharazim.co.uk"
+  [[params.friend_link]]
+  title = "bearSound Studio"
+  href = "https://bearsoundstudio.com"
+
+  [[params.bookmark_link]]
+  title =  "Martin Fowler"
+  href =  "https://martinfowler.com"
+  [[params.bookmark_link]]
+  title = "ServiceMesher"
+  href =  "http://www.servicemesher.com"
+  [[params.bookmark_link]]
+  title =  "Pxhere"
+  href = "https://pxhere.com"
+  [[params.bookmark_link]]
+  title = "unsplash"
+  href = "https://unsplash.com"
+  
+  [[params.addtional_menus]]
+  title =  "Travel"
+  href =  "/top/travel/"
+  [[params.addtional_menus]]
+  title =  "About"
+  href =  "/top/about/"
+  [[params.additional_menus]]
+  title = "Books"
+  href = "/top/books"
+  [[params.additional_menus]]
+  title = "Health & Wellbeing"]]
+  href = "/top/handw"
+  [[params.additional_menus]]
+  title = "Misc"
+  href = "/top/misc"
+
+#[outputFormats.Algolia]
+#baseName = "algolia"
+#isPlainText = true
+#mediaType = "application/json"
+#notAlternative = true
+
+#[params.algolia]
+#vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+#params = ["categories", "tags"] 
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
+  [markup.highlight]
+    style = "dracula"
