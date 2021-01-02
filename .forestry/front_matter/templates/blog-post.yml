@@ -78,4 +78,3 @@ fields:
   description: What you want the end of the URL to read like e.g. /my-favourite-books
 pages:
 - content/hello-world.md
-- content/post.md
