@@ -3,7 +3,6 @@ author = "Leonie"
 categories = "Test"
 date = 2021-01-02T00:00:00Z
 description = "blog post"
-draft = true
 excerpt = "The first ever blog post"
 image = "/img/lemon.svg"
 layout = "post"
