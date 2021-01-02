@@ -4,7 +4,7 @@ title = "Lulu's Lemons"
 theme = "cleanwhite"
 
 [outputs]
-home = ["html", "RSS", "markdown", "Algolia"]
+home = ["html", "RSS"]
 
 [params]
   header_image = "img/header.webp"
@@ -82,7 +82,7 @@ home = ["html", "RSS", "markdown", "Algolia"]
   title = "Books"
   href = "/top/books"
   [[params.additional_menus]]
-  title = "Health & Wellbeing"]]
+  title = "Health & Wellbeing"
   href = "/top/handw"
   [[params.additional_menus]]
   title = "Misc"
