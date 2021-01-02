@@ -2,10 +2,77 @@
 label: Blog Post
 hide_body: false
 fields:
+- name: layout
+  type: text
+  config:
+    required: true
+  label: Layout
+  description: Keep as Default
+  default: post
+  hidden: true
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
   description: Post Title
   default: Post
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+  description: Give a short summary of the post
+  default: This is my latest blog post
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+  description: Only use if you want to!
+- name: excerpt
+  type: text
+  config:
+    required: true
+  label: Excerpt
+  description: This will show as a summary on your main homepage!
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Post Image
+  description: Uploads a nice image that acts as your post image!
+  default: "/img/lemon.svg"
+- name: date
+  type: datetime
+  label: Date
+  description: You guessed it. Needs to be completed to sort blog posts
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+- name: author
+  type: text
+  config:
+    required: true
+  label: Author
+  description: That's You! (If you need a guest, just ask!)
+  default: Leonie
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: All the tags related to your post
+- name: categories
+  type: text
+  config:
+    required: true
+  label: Category
+  description: What category can you place this post in
+- name: slug
+  type: text
+  config:
+    required: false
+  label: URL
+  description: What you want the end of the URL to read like e.g. /my-favourite-books
